@@ -17,7 +17,7 @@ const data_Fetcher = async () => {
   // console.log(creator_info)
   // creator.innerHTML = creator_heading;
   
-  const typed = new Typed('div#creator_para', {
+  const typed = new Typed('div#creator', {
       strings: [creator_info],
       typeSpeed: typer_speed_value,
     }); 
@@ -28,7 +28,7 @@ const data_Fetcher = async () => {
 
   
  const interval =  setInterval(()=>{
-  if(window.document.querySelector('#creator_para').innerHTML == creator_info){
+  if(window.document.querySelector('#creator').innerHTML == creator_info){
     creator.innerHTML += `<button id="creator_ok_btn">Ok</button>`;
     clearInterval(interval);
     let btn = document.querySelector('#creator_ok_btn');
