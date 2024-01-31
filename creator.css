@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+  font-family: 'Lobster', serif;
+}
+
+body{
+  background-color:#000000 !important;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  width :100vw !important; 
+  height:100vh !important;
+}
+
+canvas{
+  width:100vw;
+  height:100vh;
+  position: absolute;
+  z-index: 1000!important;
+}
+
+div#creator{
+  width:330px;
+  height:460px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border:none !important;
+  background:rgba(0,0,0,0.100);
+  z-index: 1001;
+  color:#ffffff !important; /*for now*/
+/*  font-family: 'Bangers', serif; */
+  text-align: center !important;
+  padding-top:2px;
+/* display:none;  */
+ padding-left:10px;
+ padding-right:10px;
+ padding-bottom:10px;
+ border-radius: 5px;
+ display:block;
+ box-shadow: 2.5px 2.5px 4px grey,
+       inset 0.8px 0.8px 1px grey;
+ backdrop-filter: blur(4px) !important;
+ animation: text_shadow 10s linear infinite alternate;
+}
+
+/* Cursor */
+.typed-cursor {
+  display: none !important;
+}
+
+div#creator button{
+    width:60px;
+    height:30px;
+    font-weight: bolder !important;
+    letter-spacing: 1px;
+    border:none;
+    top:2px;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 5.2px 0.5px grey, inset 0.1px 0.1px 0.1px grey;
+    z-index: 9999;
+    position: relative;
+    /* position: absolute; */ 
+  }
+  
+div#creator button:hover{
+    scale:0.9;
+  }
+  
+ div#body_hider{
+  width:100vw !important;
+  height:100vh;
+  background:black !important;
+  position: absolute;
+  z-index: 9998;
+  display:none;
+}
+
+@keyframes text_shadow{
+  20%{
+    text-shadow: 1px 1px 0.6px grey;
+  }
+  25%{
+    text-shadow: 1px 1px 1px darkcyan;
+  }
+  30%{
+    text-shadow: 1px 1px 0.6px grey;
+  }
+  40%{
+   text-shadow: 1px 1px 0.6px blue; 
+  }
+  60%{
+    text-shadow: 1px 1px 0.6px red;
+  }
+  65%{
+    text-shadow: 1px 1px 0.6px black;
+  }
+  75%{
+    text-shadow: 1px 1px 0.6px black;
+  }
+  80%{
+    text-shadow: 1px 1px 0.6px darkviolet;
+  }
+  90%{
+    text-shadow: 1px 1px 0.6px deeppink;
+  }
+  100%{
+    text-shadow: 1px 1px 0.6px yellow;
+  }
+}

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+  font-family: 'Lobster', serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#000000 !important;
+}
+canvas {
+  width: 100vw;
+  height: 100vh;
+  position: absolute !important;
+  z-index: 100;
+}
+
+.calculator{
+  width:320px;
+  height:360px;
+  border:none;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  background-color:rgba(0,0,0,0.100);
+  box-shadow: 2.5px 2.5px 3.5px 1.5px grey,
+        inset 1px 1px 1px 0.5px grey;
+}
+
+input#first{
+  background-color: transparent;
+  position: absolute;
+  border-radius: 5px;
+  top:10%;
+  left:13%;
+  width: 230px;
+  height:calc(10% - 10px);
+  color:white;
+  padding-left:10px;
+}
+
+input#second{
+  background-color: transparent;
+  position: absolute;
+  border-radius: 5px;
+  top:30%;
+  left:13%;
+  width: 230px;
+  height:calc(10% - 10px);
+  color:white;
+  padding-left:10px;
+}
+
+input{
+  box-shadow:2px 2px 2px grey;
+  backdrop-filter: blur(10px);
+  background:rgba(0,0,0,0.30);
+}
+
+#addition{
+  color:grey;
+  position: absolute !important;
+  top:50%;
+  left:15%;
+  text-shadow: 1px 1px 1.5px darkblue;
+  animation: text_shadow_animation 2s linear infinite alternate;
+}
+#radio1{
+  color:white !important;
+  position: absolute;
+  border:none;
+  position: absolute;
+  top:50%;
+  left:5%;
+}
+#radio2{
+  color:white !important;
+  position: absolute;
+  border:none;
+  position: absolute;
+  top:60%;
+  left:5%;
+}
+
+#substraction{
+  color:grey;
+  position: absolute !important;
+  top:60%;
+  left:15%;
+  text-shadow: 1px 1px 1.5px darkblue;
+  animation: text_shadow_animation 2s linear infinite alternate;
+}
+
+@keyframes text_shadow_animation{
+  100%{
+    text-shadow: 1px 1px 1.5px darkred;
+  }
+}
+
+#radio3{
+  color:white !important;
+  position: absolute;
+  border:none;
+  position: absolute;
+  top:50%;
+  left:50%;
+}
+
+#radio4{
+  color:white !important;
+  position: absolute;
+  border:none;
+  position: absolute;
+  top:60%;
+  left:50%;
+}
+
+#multiplication{
+  color:grey;
+  position: absolute !important;
+  top:51%;
+  left:60%;
+  text-shadow: 1px 1px 1.5px darkblue;
+  animation: text_shadow_animation 2s linear infinite alternate;
+}
+
+#division{
+  color:grey;
+  position: absolute !important;
+  top:61%;
+  left:60%;
+  text-shadow: 1px 1px 1.5px darkblue;
+  animation: text_shadow_animation 2s linear infinite alternate;
+}
+
+button#submitBtn{
+  color:white !important;
+  position: absolute !important;
+  top:73.2%;
+  left:25%;
+  width:150px;
+  height:30px;
+  border:none;
+  border-radius: 5px;
+  box-shadow:2px 2px 4px grey,
+       inset 0.2px 0.2px 0.7px grey;
+  font-family: 'Lobster', serif;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1.5px gold;
+  background-color: transparent !important;
+}
+
+#result{
+  position: absolute;
+  top:86%;
+  left:12%;
+  width:240px;
+  height:35px;
+/*  background:red; */
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(100% + 3px);
+  text-shadow:1px 1px 0.5px grey;
+}
+
+h1.creator_header{
+  position: absolute;
+  color: transparent !important;
+  background:linear-gradient(45deg,red,black,yellow,black,green,blue,brown,black,pink,black,violet,black,lime,black,darkred,black,skyblue,black,pink,black,deeppink,black,gold,black,blue,black,orange);
+  background-position: left;
+  background-size: 1000%;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  z-index: 99999 !important;
+  top:5% !important;
+  left:20% !important;
+  animation: gradient 10s linear infinite alternate !important;
+  width:auto !important;
+}
+
+@keyframes gradient{
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}

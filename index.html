@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script defer src="body_content.js" type="text/javascript" charset="utf-8"></script>
+<head> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> --> 
+
+<script defer src="gsap.js" type="text/javascript" charset="utf-8"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Faulty Calculator</title>
+<!--  <link rel="stylesheet" href="creator.css"> --> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body oncontextmenu="return false">
+  
+  <h1 class="creator_header">Anjani Kumar Jha</h1>
+  
+  <div id="creator">
+  </div>
+   <canvas></canvas>
+   
+  <div id="calculator" class="calculator">
+    <div class="first_input_box" >
+    <input  id="first" type="number" placeholder="Enter the first number">
+    </div>
+    <div class="second_input_box" >
+    <input  id="second" type="number" placeholder="Enter the second number">
+    </div>
+    <input id="radio1" type="radio" name="operation" checked><label id="addition" for="radio1">Addition</label>
+    
+     <input id="radio2" type="radio" name="operation"><label id="substraction" for="radio2">Subtraction</label>
+     
+    <input id="radio3" type="radio" name="operation"><label id="multiplication" for="radio3">Multiplication</label>
+    
+    <input id="radio4" type="radio" name="operation"><label id="division" for="radio4">Division</label>
+    
+    <button id="submitBtn">Submit</button>
+    
+    <div id="result">
+    </div>
+    
+   
+  </div>
+</body>
+<!-- 
+<script defer src="creator.js" type="text/javascript" charset="utf-8"></script>
+ --> 
+<script  src="script.js" type="text/javascript" charset="utf-8"></script>
+<script  src="design.js" type="text/javascript" charset="utf-8"></script>
+<script defer src="clicker.js" type="text/javascript" charset="utf-8"></script>
+</html>
